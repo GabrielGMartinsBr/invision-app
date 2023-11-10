@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CatalogItemComponent } from './catalog-item/catalog-item.component';
 import { CatalogItem } from './catalog-item/types';
+import { ClientDescComponent } from './client-desc/client-desc.component';
 
 @Component({
   selector: 'app-catalog-items',
   standalone: true,
   imports: [
     CommonModule,
-    CatalogItemComponent
+    ClientDescComponent,
+    CatalogItemComponent,
   ],
   templateUrl: './catalog-items.component.html',
   styleUrl: './catalog-items.component.scss'
