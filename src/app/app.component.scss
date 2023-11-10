@@ -13,6 +13,15 @@
 
     .tab-content {
         flex: 1 1 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .scroll-area {
+        width: 100%;
+        height: 100%;
         overflow: auto;
+        position: relative;
+        padding-bottom: 9rem;
     }
 }

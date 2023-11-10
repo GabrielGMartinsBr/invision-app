@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'app-darg-gray': '#27262a'
+      }
+    },
   },
   plugins: [
     require('tailwind-scrollbar')

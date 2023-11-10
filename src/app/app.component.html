@@ -1,9 +1,14 @@
 <main class="main">
   <div class="content">
     <app-tab-header />
-    <div class="tab-content scrollbar-thin scrollbar-thumb-zinc-200">
-      <router-outlet></router-outlet>
+
+    <div class="tab-content">
+      <div class="scroll-area scrollbar-thin scrollbar-thumb-zinc-200">
+        <router-outlet></router-outlet>
+      </div>
+      <app-add-button />
     </div>
+
     <app-tab-menu />
   </div>
 </main>
