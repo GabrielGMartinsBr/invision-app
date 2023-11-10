@@ -1,11 +1,61 @@
-button {
+:host {
+    @apply absolute bottom-7 right-6;
+}
+
+.add-button {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: auto;
     
     @apply 
-        absolute bottom-7 right-6
-        bg-app-darg-gray
-        text-white text-2xl
-        flex items-center justify-center;
+        bg-app-darg-gray 
+        flex items-center justify-center
+        transition-all ease-out duration-300;
+
+    .icon-wrap {
+        @apply transition-all ease-out duration-300;
+    }
+
+    &.active {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        @apply text-primary;
+
+        .icon-wrap {
+            @apply rotate-45
+        }
+    }
+}
+
+.menu {
+    width: 212px;
+    height: 0px;
+    overflow: hidden;
+    font-size: 1rem;
+    border-radius: .75rem;
+    opacity: 0;
+    margin-top: 1rem;
+    user-select: none;
+    
+    &.active {
+        height: 194px;
+        opacity: 1;
+    }
+
+    @apply bg-app-darg-gray transition-all duration-500 ease-out;
+
+    .menu-content {
+        padding: 1.5rem .75rem;
+    }
+
+    .menu-item {
+        @apply py-3 text-white font-semibold;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(#fff, .1);
+            }
+    }
 }

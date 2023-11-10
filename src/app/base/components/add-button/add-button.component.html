@@ -1,3 +1,15 @@
-<button>
-    <fa-icon [icon]="['fas', 'plus']" />
-</button>
+<div class="wrap">
+    <button class="add-button" (click)="toggle($event)" [ngClass]="{ 'active': active}">
+        <div class="icon-wrap">
+            <fa-icon [icon]="['fas', 'plus']" />
+        </div>
+    </button>
+
+    <div class="menu" [ngClass]="{ 'active': active}">
+        <div class="menu-content">
+            <div *ngFor="let i of menuItems" class="menu-item">
+                {{i}}
+            </div>
+        </div>
+    </div>
+</div>
