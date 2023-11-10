@@ -1,22 +1,26 @@
 import { Routes } from '@angular/router';
 import { DefaultRouteComponent } from './base/default-route/default-route.component';
+import { CatalogPageComponent } from './pages/catalog-page/catalog-page.component';
+import { ProposalsPageComponent } from './pages/proposals-page/proposals-page.component';
+import { PeoplePageComponent } from './pages/people-page/people-page.component';
+import { PaymentsPageComponent } from './pages/payments-page/payments-page.component';
 
 export const routes: Routes = [
     {
         path: 'catalog',
-        component: DefaultRouteComponent
+        component: CatalogPageComponent
     },
     {
         path: 'proposals',
-        component: DefaultRouteComponent
+        component: ProposalsPageComponent
     },
     {
         path: 'people',
-        component: DefaultRouteComponent
+        component: PeoplePageComponent
     },
     {
         path: 'payments',
-        component: DefaultRouteComponent
+        component: PaymentsPageComponent
     },
     {
         path: 'more',
