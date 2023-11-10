@@ -1,1 +1,47 @@
-<p>tab-menu works!</p>
+<div class="menu-content">
+
+    <button [class.active]="true">
+        <div class="button-icon">
+            <fa-icon [icon]="['fas', 'box']" />
+        </div>
+        <div class="button-text">
+            Catalog
+        </div>
+    </button>
+
+    <button>
+        <div class="button-icon">
+            <fa-icon [icon]="['far', 'pen-to-square']" />
+        </div>
+        <div class="button-text">
+            Proposals
+        </div>
+    </button>
+
+    <button>
+        <div class="button-icon">
+            <fa-icon [icon]="['fas', 'users']" />
+        </div>
+        <div class="button-text">
+            People
+        </div>
+    </button>
+
+    <button>
+        <div class="button-icon">
+            <fa-icon [icon]="['fas', 'dollar-sign']" />
+        </div>
+        <div class="button-text">
+            Payments
+        </div>
+    </button>
+
+    <button>
+        <div class="button-icon">
+            <fa-icon [icon]="['fas', 'ellipsis-h']" />
+        </div>
+        <div class="button-text">
+            More
+        </div>
+    </button>
+</div>
